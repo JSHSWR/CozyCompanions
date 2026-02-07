@@ -280,6 +280,32 @@ public class VillagerDialogueScreen extends Screen {
         g.fill(x, y, x + w, y + h, 0xFF896E46);
         // Mood tint overlay
         int tint;
+                // Use provided portrait texture with bobbing, mood tint, and blink
+        int bobOffset = (int)(Math.sin(this.bobTick / 10.0F) * 2);
+        int drawY = y + bobOffset;
+        g.blit(PORTRAIT_TEX, x, drawY, 0, 0, w, h, w, h);
+        // Mood tint overlay
+        int tint2;
+        switch (mood) {
+            case HAPPY -> tint2 = 0x4433DD77;
+            case ANNOYED -> tint2 = 0x44DD3333;
+            case SHY -> tint2 = 0x444477DD;
+            case EXCITED -> tint2 = 0x44FFD700;
+            default -> tint2 = 0x00000000;
+        }
+        g.fill(x, drawY, x + w, drawY + h, tint2);
+        // Blink overlay (dark band) if eyes closed
+        if (eyesClosed) {
+            int bandHeight = h / 3;
+            g.fill(x, drawY, x + w, drawY + bandHeight, 0x88000000);
+        }
+        // Mouth open overlay - dark band at bottom if mouthOpen
+        if (mouthOpen) {
+            int bandHeight = h / 4;
+            g.fill(x, drawY + h - bandHeight, x + w, drawY + h, 0x55000000);
+        }
+        return;
+
         switch (mood) {
             case HAPPY -> tint = 0x4433DD77;
             case ANNOYED -> tint = 0x44DD3333;
