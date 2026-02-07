@@ -5,6 +5,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.client.resources.sounds.SimpleSoundInstance;
@@ -51,7 +52,15 @@ public class VillagerDialogueScreen extends Screen {
     /** Buttons representing choices; re‑created for each entry. */
     private final List<Button> optionButtons = new ArrayList<>();
 
+   /** Tick counter used to drive portrait bobbing. */
+    private int bobTick = 0;
+
+    /** Texture for the villager portrait. */
+    private static final ResourceLocation PORTRAIT_TEX = new ResourceLocation("cozycompanions", "textures/gui/villager_portrait.png");
+ 
+  
     public VillagerDialogueScreen(Villager villager) {
+     
         super(Component.translatable("screen.cozyconversation.title"));
         this.villager = villager;
     }
