@@ -120,6 +120,7 @@ public class VillagerDialogueScreen extends Screen {
                 // Clamp bond between 0 and 100
                 if (bond < 0) bond = 0;
                 if (bond > 100) bond = 100;
+  
                 // Immediately select a new entry and update buttons
                 selectNextEntry();
                 rebuildOptionButtons();
@@ -133,6 +134,8 @@ public class VillagerDialogueScreen extends Screen {
     @Override
     public void tick() {
         super.tick();
+                bobTick++;
+        
         // Typewriter logic: progress along the text at a fixed pace, with
         // longer delays for punctuation to simulate natural speech.
         if (this.currentEntry != null && typewriterIndex < this.currentEntry.text.getString().length()) {
@@ -151,7 +154,7 @@ public class VillagerDialogueScreen extends Screen {
                 this.mouthOpen = !this.mouthOpen;
                 // play subtle talk tick (rate limited)
                 if (this.typewriterIndex % 3 == 0) {
-                    Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.NOTE_BLOCK_HARP, 0.3F));
+                    Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.VILLAGER_AMBIENT, 0.3F));
                 }
             }
         } else {
