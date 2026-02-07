@@ -1,0 +1,5 @@
+/locate structure village
+/locate structure minecraft:village_plains
+/tp 768 ~ -272
+/gamemode creative
+/spawnpoint

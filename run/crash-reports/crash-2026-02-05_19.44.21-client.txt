@@ -1,0 +1,267 @@
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 2026-02-05 19:44:21
+Description: Rendering screen
+
+java.lang.IllegalStateException: Can only blur once per frame
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.gui.render.state.GuiRenderState.blurBeforeThisStratum(GuiRenderState.java:44) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.gui.GuiGraphics.blurBeforeThisStratum(GuiGraphics.java:140) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.gui.screens.Screen.renderBlurredBackground(Screen.java:400) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.gui.screens.Screen.renderBackground(Screen.java:388) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/cozycompanions@0.1.0/com.coenn.cozycompanions.client.screen.VillagerDialogueScreen.render(VillagerDialogueScreen.java:70) ~[main/:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.gui.screens.Screen.renderWithTooltipAndSubtitles(Screen.java:111) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/net.minecraftforge.forge@61.0.8/net.minecraftforge.client.ForgeHooksClient.drawScreenInternal(ForgeHooksClient.java:335) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/net.minecraftforge.forge@61.0.8/net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:329) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:542) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.Minecraft.runTick(Minecraft.java:1313) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.Minecraft.run(Minecraft.java:893) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.main.Main.main(Main.java:223) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.11-61.0.8/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:96) ~[fmlloader-1.21.11-61.0.8.jar!/:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.11-61.0.8/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.lambda$makeService$0(CommonLaunchHandler.java:79) ~[fmlloader-1.21.11-61.0.8.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:77) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:97) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:116) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.BootstrapEntry.main(BootstrapEntry.java:17) [modlauncher-10.2.4.jar!/:?]
+	at net.minecraftforge.bootstrap@2.1.7/net.minecraftforge.bootstrap.Bootstrap.moduleMain(Bootstrap.java:188) [bootstrap-2.1.8.jar!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at net.minecraftforge.bootstrap.Bootstrap.bootstrapMain(Bootstrap.java:133) [bootstrap-2.1.8.jar:2.1.8]
+	at net.minecraftforge.bootstrap.Bootstrap.start(Bootstrap.java:53) [bootstrap-2.1.8.jar:2.1.8]
+	at net.minecraftforge.bootstrap.ForgeBootstrap.main(ForgeBootstrap.java:19) [bootstrap-2.1.8.jar:2.1.8]
+Transformer Audit:
+  com.coenn.cozycompanions.client.screen.VillagerDialogueScreen
+    REASON: classloading
+  net.minecraft.client.Minecraft
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.client.gui.GuiGraphics
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.client.gui.render.state.GuiRenderState
+    REASON: classloading
+  net.minecraft.client.gui.screens.Screen
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.client.main.Main
+    REASON: classloading
+  net.minecraft.client.renderer.GameRenderer
+    REASON: classloading
+  net.minecraftforge.client.ForgeHooksClient
+    REASON: classloading
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Suspected Mod: 
+	Cozy Companions (cozycompanions), Version: 0.1.0
+		at TRANSFORMER/cozycompanions@0.1.0/com.coenn.cozycompanions.client.screen.VillagerDialogueScreen.render(VillagerDialogueScreen.java:70)
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.gui.render.state.GuiRenderState.blurBeforeThisStratum(GuiRenderState.java:44) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.gui.GuiGraphics.blurBeforeThisStratum(GuiGraphics.java:140) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.gui.screens.Screen.renderBlurredBackground(Screen.java:400) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.gui.screens.Screen.renderBackground(Screen.java:388) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar%230!/:?]
+	at TRANSFORMER/cozycompanions@0.1.0/com.coenn.cozycompanions.client.screen.VillagerDialogueScreen.render(VillagerDialogueScreen.java:70) ~[main/:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.gui.screens.Screen.renderWithTooltipAndSubtitles(Screen.java:111) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar%230!/:?]
+	at TRANSFORMER/net.minecraftforge.forge@61.0.8/net.minecraftforge.client.ForgeHooksClient.drawScreenInternal(ForgeHooksClient.java:335) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar%231!/:?]
+	at TRANSFORMER/net.minecraftforge.forge@61.0.8/net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:329) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar%231!/:?]
+Transformer Audit:
+  com.coenn.cozycompanions.client.screen.VillagerDialogueScreen
+    REASON: classloading
+  net.minecraft.client.gui.GuiGraphics
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.client.gui.render.state.GuiRenderState
+    REASON: classloading
+  net.minecraft.client.gui.screens.Screen
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraftforge.client.ForgeHooksClient
+    REASON: classloading
+-- Screen render details --
+Details:
+	Screen name: com.coenn.cozycompanions.client.screen.VillagerDialogueScreen
+	Mouse location: Scaled: (240.000000, 123.874874). Absolute: (960.000000, 495.000000)
+	Screen size: Scaled: (480, 248). Absolute: (1920, 991). Scale factor of 4
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:542) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.Minecraft.runTick(Minecraft.java:1313) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.Minecraft.run(Minecraft.java:893) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.main.Main.main(Main.java:223) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.11-61.0.8/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:96) ~[fmlloader-1.21.11-61.0.8.jar!/:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.11-61.0.8/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.lambda$makeService$0(CommonLaunchHandler.java:79) ~[fmlloader-1.21.11-61.0.8.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:77) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:97) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:116) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.BootstrapEntry.main(BootstrapEntry.java:17) [modlauncher-10.2.4.jar!/:?]
+	at net.minecraftforge.bootstrap@2.1.7/net.minecraftforge.bootstrap.Bootstrap.moduleMain(Bootstrap.java:188) [bootstrap-2.1.8.jar!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at net.minecraftforge.bootstrap.Bootstrap.bootstrapMain(Bootstrap.java:133) [bootstrap-2.1.8.jar:2.1.8]
+	at net.minecraftforge.bootstrap.Bootstrap.start(Bootstrap.java:53) [bootstrap-2.1.8.jar:2.1.8]
+	at net.minecraftforge.bootstrap.ForgeBootstrap.main(ForgeBootstrap.java:19) [bootstrap-2.1.8.jar:2.1.8]
+Transformer Audit:
+  net.minecraft.client.Minecraft
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.client.main.Main
+    REASON: classloading
+  net.minecraft.client.renderer.GameRenderer
+    REASON: classloading
+
+
+-- Uptime --
+Details:
+	JVM uptime: 25.901s
+	Wall uptime: 15.607s
+	High-res time: 22.941s
+	Client ticks: 239 ticks / 11.950s
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.Minecraft.fillReport(Minecraft.java:2368) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.Minecraft.emergencySaveAndCrash(Minecraft.java:957) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.Minecraft.run(Minecraft.java:913) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at TRANSFORMER/minecraft@1.21.11/net.minecraft.client.main.Main.main(Main.java:223) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.11-61.0.8/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:96) ~[fmlloader-1.21.11-61.0.8.jar!/:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.11-61.0.8/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.lambda$makeService$0(CommonLaunchHandler.java:79) ~[fmlloader-1.21.11-61.0.8.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:77) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:97) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:116) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) [modlauncher-10.2.4.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.BootstrapEntry.main(BootstrapEntry.java:17) [modlauncher-10.2.4.jar!/:?]
+	at net.minecraftforge.bootstrap@2.1.7/net.minecraftforge.bootstrap.Bootstrap.moduleMain(Bootstrap.java:188) [bootstrap-2.1.8.jar!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at net.minecraftforge.bootstrap.Bootstrap.bootstrapMain(Bootstrap.java:133) [bootstrap-2.1.8.jar:2.1.8]
+	at net.minecraftforge.bootstrap.Bootstrap.start(Bootstrap.java:53) [bootstrap-2.1.8.jar:2.1.8]
+	at net.minecraftforge.bootstrap.ForgeBootstrap.main(ForgeBootstrap.java:19) [bootstrap-2.1.8.jar:2.1.8]
+Transformer Audit:
+  net.minecraft.client.Minecraft
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.client.main.Main
+    REASON: classloading
+
+
+-- Affected level --
+Details:
+	All players: 1 total; LocalPlayer{name=Dev, id=119, pos=(774.6102061852334, 62.9375, -249.47081455527507), mode=CREATIVE, permission=permission level: OWNERS}
+	Chunk stats: 1521, 453
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (96,63,272), Section: (at 0,15,0 in 6,3,17; chunk contains blocks 96,-64,272 to 111,319,287), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 1878 game time, 1878 day time
+	Server brand: forge
+	Server type: Integrated singleplayer server
+	Tracked entity count: 187
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, mod_resources
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.11
+	Minecraft Version ID: 1.21.11
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.10, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 116723616 bytes (111 MiB) / 880803840 bytes (840 MiB) up to 6228541440 bytes (5940 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 7840HS w/ Radeon 780M Graphics     
+	Identifier: AuthenticAMD Family 25 Model 116 Stepping 1
+	Microarchitecture: Zen 3
+	Frequency (GHz): 3.79
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: AMD Radeon(TM) 780M
+	Graphics card #0 vendor: Advanced Micro Devices, Inc.
+	Graphics card #0 VRAM (MiB): 512.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.11026.1
+	Graphics card #1 name: NVIDIA GeForce RTX 4050 Laptop GPU
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 6141.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.15.7709
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 5.60
+	Memory slot #0 type: DDR5
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: DDR5
+	Virtual memory max (MiB): 25282.36
+	Virtual memory used (MiB): 17524.58
+	Swap memory total (MiB): 1536.00
+	Swap memory used (MiB): 144.23
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 113540.63, total: 486109.00
+	Space in storage for workdir (MiB): available: 113540.63, total: 486109.00
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Debug Flags: 0 total; 
+	Launched Version: MOD_DEV
+	Backend library: LWJGL version 3.3.3+5
+	Backend API: NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 577.09, NVIDIA Corporation
+	Window size: 1920x991
+	GFLW Platform: win32
+	Render Extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
+	GL debug messages: 
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Universe: 400921fb54442d18
+	Type: Integrated Server (map_client.txt)
+	Transparency: regular
+	Render Distance: 16/16 chunks
+	Resource Packs: vanilla, mod_resources
+	Current Language: en_us
+	Locale: en_US
+	System encoding: Cp1252
+	File encoding: UTF-8
+	CPU: 16x AMD Ryzen 7 7840HS w/ Radeon 780M Graphics 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/119, l='ServerLevel[New World]', x=774.61, y=62.94, z=-249.47]]
+	Active Data Packs: vanilla, mod:forge (incompatible), mod:cozycompanions (incompatible)
+	Available Data Packs: minecart_improvements, mod:cozycompanions (incompatible), mod:forge (incompatible), redstone_experiments, trade_rebalance, vanilla
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: 5326734412070160836
+	Suppressed Exceptions: ~~NONE~~
+	ModLauncher: 10.2.4
+	ModLauncher launch target: forge_userdev_client
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/ slf4jfixer PLUGINSERVICE 
+		/ runtimedistcleaner PLUGINSERVICE 
+		/ runtime_enum_extender PLUGINSERVICE 
+		/ capability_token_subclass PLUGINSERVICE 
+		/ accesstransformer PLUGINSERVICE 
+		/ mixin PLUGINSERVICE 
+		/ fml TRANSFORMATIONSERVICE 
+		/ forge TRANSFORMATIONSERVICE 
+		/ mixin TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		lowcodefml@61
+		minecraft@1.0
+		javafml@61.0.8
+	Mod List: 
+		union:/C:/Users/coenn/.gradle/caches/forge_gradle/|Minecraft                     |minecraft                     |1.21.11             |DONE      |Manifest: NOSIGNATURE
+		union:/C:/Users/coenn/.gradle/caches/forge_gradle/|Forge                         |forge                         |61.0.8              |DONE      |Manifest: NOSIGNATURE
+		C:\Users\coenn\Music\CozyCompanions\build\sourcesS|Cozy Companions               |cozycompanions                |0.1.0               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 1dbc5410-774b-43a3-8d64-cfcd2058819e
+	FML: 61.0
+	Forge: net.minecraftforge:61.0.8

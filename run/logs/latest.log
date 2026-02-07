@@ -1,0 +1,121 @@
+[06Feb2026 20:14:34.514] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_client, --version, MOD_DEV, --assetIndex, 29, --assetsDir, C:\Users\coenn\.gradle\caches\forge_gradle\assets, --gameDir, .]
+[06Feb2026 20:14:34.518] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.10+7-LTS
+[06Feb2026 20:14:34.518] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.4 starting: java version 21.0.10 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[06Feb2026 20:14:34.607] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[06Feb2026 20:14:34.770] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[06Feb2026 20:14:34.955] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[06Feb2026 20:14:35.085] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/coenn/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=CLIENT
+[06Feb2026 20:14:35.210] [EarlyDisplay/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 577.09, NVIDIA Corporation
+[06Feb2026 20:14:36.075] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[06Feb2026 20:14:36.406] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_client' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\coenn\.gradle\caches\forge_gradle\assets, --assetIndex, 29]
+[06Feb2026 20:14:38.081] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 287 Datafixer optimizations took 437 milliseconds
+[06Feb2026 20:14:42.376] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/coenn/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.11-61.0.8_mapped_official_1.21.11/forge-1.21.11-61.0.8_mapped_official_1.21.11.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[06Feb2026 20:14:42.378] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/coenn/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.11-61.0.8_mapped_official_1.21.11/forge-1.21.11-61.0.8_mapped_official_1.21.11.jar%230!/data/.mcassetsroot' uses unexpected schema
+[06Feb2026 20:14:42.412] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[06Feb2026 20:14:42.436] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[06Feb2026 20:14:42.594] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[06Feb2026 20:14:42.739] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
+[06Feb2026 20:14:42.853] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 61.0.8, for MC 1.21.11 with MCP 20251223.124241
+[06Feb2026 20:14:42.854] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v61.0.8 Initialized
+[06Feb2026 20:14:42.865] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[06Feb2026 20:14:43.525] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
+[06Feb2026 20:14:43.625] [Download-1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
+[06Feb2026 20:14:43.631] [Download-1/ERROR] [com.mojang.realmsclient.client.RealmsClient/]: Failed to fetch Realms feature flags
+com.mojang.realmsclient.exception.RealmsServiceException: Realms authentication error with message 'java.lang.RuntimeException: Failed to parse into SignedJWT: 0'
+	at TRANSFORMER/minecraft@1.21.11/com.mojang.realmsclient.client.RealmsClient.execute(RealmsClient.java:526) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.11/com.mojang.realmsclient.client.RealmsClient.fetchFeatureFlags(RealmsClient.java:186) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar%230!/:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[06Feb2026 20:14:43.824] [Worker-Main-11/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-17.0.01.hex, loading
+[06Feb2026 20:14:43.824] [Worker-Main-5/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-17.0.01.hex, loading
+[06Feb2026 20:14:43.949] [Worker-Main-5/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-17.0.01.hex, loading
+[06Feb2026 20:14:44.010] [Worker-Main-5/INFO] [com.coenn.cozycompanions.CozyCompanions/]: Cozy Companions: common setup initializing
+[06Feb2026 20:14:44.039] [Worker-Main-5/INFO] [com.coenn.cozycompanions.CozyCompanions/]: Cozy Companions: client setup initializing
+[06Feb2026 20:14:44.039] [Worker-Main-5/INFO] [com.coenn.cozycompanions.CozyCompanions/]: MINECRAFT NAME >> Dev
+[06Feb2026 20:14:44.236] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[06Feb2026 20:14:44.650] [Worker-Main-11/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing model for variant: 'Block{cozycompanions:example_block}'
+[06Feb2026 20:14:45.012] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: BETA Current: 61.0.8 Target: 61.0.8
+[06Feb2026 20:14:45.716] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Headphones (Crusher Evo)
+[06Feb2026 20:14:45.717] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[06Feb2026 20:14:45.717] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[06Feb2026 20:14:45.728] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[06Feb2026 20:14:45.731] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[06Feb2026 20:14:45.742] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[06Feb2026 20:14:45.754] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[06Feb2026 20:14:45.756] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[06Feb2026 20:14:45.820] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[06Feb2026 20:14:45.824] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[06Feb2026 20:14:45.825] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[06Feb2026 20:14:45.827] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/beds.png-atlas
+[06Feb2026 20:14:45.828] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
+[06Feb2026 20:14:45.838] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[06Feb2026 20:14:45.850] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[06Feb2026 20:14:45.856] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/signs.png-atlas
+[06Feb2026 20:14:45.857] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[06Feb2026 20:14:46.094] [IO-Worker-1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
+[06Feb2026 20:14:46.096] [IO-Worker-1/ERROR] [com.mojang.realmsclient.RealmsAvailability/]: Couldn't connect to realms
+com.mojang.realmsclient.exception.RealmsServiceException: Realms authentication error with message 'java.lang.RuntimeException: Failed to parse into SignedJWT: 0'
+	at TRANSFORMER/minecraft@1.21.11/com.mojang.realmsclient.client.RealmsClient.execute(RealmsClient.java:526) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.11/com.mojang.realmsclient.client.RealmsClient.clientCompatible(RealmsClient.java:307) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar%230!/:?]
+	at TRANSFORMER/minecraft@1.21.11/com.mojang.realmsclient.RealmsAvailability.lambda$check$0(RealmsAvailability.java:48) ~[forge-1.21.11-61.0.8_mapped_official_1.21.11.jar%230!/:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[06Feb2026 20:15:39.869] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[06Feb2026 20:15:41.725] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1470 recipes
+[06Feb2026 20:15:41.746] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1584 advancements
+[06Feb2026 20:15:41.914] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.11
+[06Feb2026 20:15:41.914] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[06Feb2026 20:15:42.382] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Loading 0 persistent chunks...
+[06Feb2026 20:15:42.383] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[06Feb2026 20:15:42.397] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[06Feb2026 20:15:42.963] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Loading 49 chunks for player spawn...
+[06Feb2026 20:15:42.963] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[06Feb2026 20:15:43.381] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Time elapsed: 999 ms
+[06Feb2026 20:15:43.622] [Render thread/INFO] [net.minecraftforge.common.ForgeHooks/]: Connected to a modded server.
+[06Feb2026 20:15:43.721] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:ad3ff9a5] logged in with entity id 93 at (752.258033814171, 86.0, -291.0815920428779)
+[06Feb2026 20:15:43.778] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[06Feb2026 20:15:44.054] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 16, from 10
+[06Feb2026 20:15:44.057] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[06Feb2026 20:15:44.117] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[06Feb2026 20:15:44.127] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 7 advancements
+[06Feb2026 20:15:44.388] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[06Feb2026 20:15:44.402] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[06Feb2026 20:15:44.451] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[06Feb2026 20:15:44.532] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[06Feb2026 20:15:44.663] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[06Feb2026 20:15:44.925] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
+[06Feb2026 20:15:45.552] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
+[06Feb2026 20:15:46.276] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
+[06Feb2026 20:15:47.700] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 512 reached during a single frame. New capacity will be 1024.
+[06Feb2026 20:15:48.867] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[06Feb2026 20:15:50.038] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 1024 reached during a single frame. New capacity will be 2048.
+[06Feb2026 20:16:54.999] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[06Feb2026 20:16:55.017] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[06Feb2026 20:16:55.109] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[06Feb2026 20:16:55.109] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[06Feb2026 20:17:15.948] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[06Feb2026 20:17:15.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[06Feb2026 20:17:15.975] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[06Feb2026 20:17:15.975] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[06Feb2026 20:19:07.148] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[06Feb2026 20:19:07.164] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[06Feb2026 20:19:07.183] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[06Feb2026 20:19:07.183] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[06Feb2026 20:19:07.865] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[06Feb2026 20:19:07.865] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[06Feb2026 20:19:07.878] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[06Feb2026 20:19:07.911] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[06Feb2026 20:19:07.912] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[06Feb2026 20:19:07.912] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[06Feb2026 20:19:08.083] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[06Feb2026 20:19:08.681] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[06Feb2026 20:19:08.686] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[06Feb2026 20:19:08.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[06Feb2026 20:19:08.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[06Feb2026 20:19:08.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[06Feb2026 20:19:08.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[06Feb2026 20:19:09.799] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
